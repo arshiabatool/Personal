@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Shafay 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffe6ef;
+  color: #a83261;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(135deg,#ffe0eb,#fff0f5,#ffc9dc);
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(38px, 8vw, 65px);
+  color: #e64d85;
+  text-shadow: 2px 3px white;
+}
+
+.subtitle {
+  margin: 15px 0 25px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background: #f26b9a;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 8px;
+  box-shadow: 0 5px 12px #e99ab5;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.09);
+  background: #df477e;
+}
+
+.card {
+  background: rgba(255,255,255,.85);
+  padding: 30px 22px;
+  border-radius: 25px;
+  width: min(90%, 440px);
+  margin: 25px auto;
+  box-shadow: 0 8px 25px #e9a5bd;
+}
+
+.section {
+  padding: 65px 15px;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #e64d85;
+  margin-bottom: 20px;
+}
+
+.big-heart {
+  font-size: 75px;
+  cursor: pointer;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.2); }
+}
+
+#letter {
+  display: none;
+  line-height: 2;
+  text-align: left;
+  animation: fade .7s;
+}
+
+@keyframes fade {
+  from {opacity:0; transform:translateY(15px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.message {
+  font-size: 19px;
+  font-weight: 600;
+  min-height: 60px;
+  margin: 20px;
+}
+
+#noBtn {
+  position: relative;
+}
+
+footer {
+  padding: 30px;
+  background: #ffc9dc;
+  font-size: 14px;
+}
+
+.floating {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: floatUp 5s linear forwards;
+  z-index: 10;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+#surprise {
+  display: none;
+  font-size: 22px;
+  line-height: 2;
+  color: #e64d85;
+}
+
+.love-reasons {
+  line-height: 2.3;
+  font-size: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div style="font-size:45px">🎀💗🧸</div>
+  <h1>Heyyy Shafay!</h1>
+  <p class="subtitle">
+    Someone made a little something just for you... 🥹
+  </p>
+  <button onclick="start()">OPEN YOUR SURPRISE 💌</button>
+  <p style="margin-top:20px;font-size:12px">
+    made with approximately a million kisses 💋
+  </p>
+</section>
+
+<section class="section">
+  <h2>A little reminder...</h2>
+  <div class="card">
+    <div class="big-heart" onclick="heartPop(this)">💗</div>
+    <p>You are someone's favourite person in the whole universe.</p>
+    <p style="margin-top:12px">And that someone is ME. HEHE. 💅</p>
+  </div>
+  <p>👆 Click the heart, Shafay!</p>
+</section>
+
+<section class="section" style="background:#fff0f5">
+  <h2>Your little love letter 💌</h2>
+  <button onclick="openLetter()">OPEN MY LETTER 🥺</button>
+
+  <div class="card" id="letter">
+    Dear Shafay,
+
+    <br><br>
+    I just wanted to remind you how special you are to me.
+    You make my days brighter, my smiles bigger, and my
+    heart so so happy.
+
+    <br><br>
+    I might annoy you, steal your attention, and ask for
+    a million kisses, but that's just because I LOVE YOU.
+
+    <br><br>
+    You're my favourite notification, my favourite person,
+    and my favourite everything.
+
+    <br><br>
+    Please never forget how much you mean to me.
+
+    <br><br>
+    Forever your biggest fan 💗
+
+    <br>
+    YOUR GIRLLLL 💋
+  </div>
+</section>
+
+<section class="section">
+  <h2>Reasons why I love you 🧸</h2>
+  <div class="card love-reasons">
+    💗 Your smile<br>
+    💗 Your voice<br>
+    💗 The way you make me laugh<br>
+    💗 Your cute little habits<br>
+    💗 Just YOU being YOU<br>
+    💗 Literally everythingggg
+  </div>
+</section>
+
+<section class="section" style="background:#fff0f5">
+  <h2>How much do you love me? 🤨</h2>
+  <div class="card">
+    <p>Choose carefully, Shafay. I am watching. 👀</p>
+    <button onclick="loveAnswer('A LITTLE?! EXCUSE ME??? 😭')">
+      A LITTLE
+    </button>
+    <button onclick="loveAnswer('INFINITE LOVE ACCEPTED!!! 💗')">
+      INFINITY ♾️
+    </button>
+    <button onclick="loveAnswer('CORRECT ANSWER. I LOVE YOU MORE THOUGH 😌')">
+      MORE THAN ANYTHING
+    </button>
+    <div class="message" id="answer"></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>One very important question...</h2>
+  <div class="card">
+    <div style="font-size:55px">💍🥺</div>
+    <h3>Will you be my favourite person forever?</h3>
+    <br>
+    <button onclick="yes()">YESSSS 💗</button>
+    <button id="noBtn" onmouseover="runAway()" onclick="runAway()">
+      NO 🙄
+    </button>
+    <div id="surprise">
+      YAYYYYYYYYY 😭💗💗💗
+      <br>
+      YOU'RE STUCK WITH ME FOREVER.
+      <br>
+      MWAHHHH 💋
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff0f5">
+  <h2>A final little surprise 🎁</h2>
+  <button onclick="secret()">CLICK FOR A SECRET 💌</button>
+  <div class="message" id="secretMessage"></div>
+</section>
+
+<footer>
+  Made with love, kisses and a little bit of craziness 💗
+  <br>
+  Exclusively for SHAFAY 🎀
+  <br><br>
+  © Your favourite girl. HEHE.
+</footer>
+
+<script>
+
+function start() {
+  document.querySelector('.hero').scrollIntoView({
+    behavior:'smooth'
+  });
+  setTimeout(() => {
+    document.querySelector('.section').scrollIntoView({
+      behavior:'smooth'
+    });
+  },500);
+  for(let i=0;i<20;i++) {
+    setTimeout(createHeart,i*100);
+  }
+}
+
+function createHeart() {
+  const heart=document.createElement('div');
+  heart.className='floating';
+  heart.innerHTML=['💗','💕','💖','💘','🎀'][Math.floor(Math.random()*5)];
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.fontSize=(20+Math.random()*25)+'px';
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),5000);
+}
+
+function heartPop(el) {
+  el.innerHTML='💖';
+  for(let i=0;i<10;i++) createHeart();
+}
+
+function openLetter() {
+  const letter=document.getElementById('letter');
+  letter.style.display=letter.style.display==='block'?'none':'block';
+  for(let i=0;i<8;i++) createHeart();
+}
+
+function loveAnswer(msg) {
+  document.getElementById('answer').innerText=msg;
+  createHeart();
+}
+
+function runAway() {
+  const btn=document.getElementById('noBtn');
+  btn.style.position='relative';
+  btn.style.left=(Math.random()*180-90)+'px';
+  btn.style.top=(Math.random()*100-50)+'px';
+}
+
+function yes() {
+  document.getElementById('surprise').style.display='block';
+  document.getElementById('noBtn').style.display='none';
+  for(let i=0;i<40;i++) {
+    setTimeout(createHeart,i*80);
+  }
+}
+
+function secret() {
+  document.getElementById('secretMessage').innerHTML=
+  'Psssst Shafay... 🤫💗<br><br>'+
+  'If I could choose one person in every lifetime,<br>'+
+  'I would still choose YOU. 🥹<br><br>'+
+  'I LOVE YOUUU SO MUCHHHH 💋💕';
+  for(let i=0;i<20;i++) {
+    setTimeout(createHeart,i*100);
+  }
+}
+
+// A few floating hearts in the background
+setInterval(createHeart,1800);
+
+</script>
+
+</body>
+</html>
